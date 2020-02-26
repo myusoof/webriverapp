@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:web_driver_app/SecondPage.dart';
+import 'package:web_driver_app/pages/second_page.dart';
 import 'package:web_driver_app/constants.dart';
 import 'package:web_driver_app/themes/themes.dart';
 
-import 'MyHomePage.dart';
-import 'customizedWidjet/CustomizedAppBar.dart';
-import 'customizedWidjet/customizedDrawer.dart';
+import 'pages/my_home_page.dart';
+import 'customizedWidjet/customized_app_bar.dart';
+import 'customizedWidjet/customized_drawer.dart';
 
 void main() => runApp(MyApp());
 
