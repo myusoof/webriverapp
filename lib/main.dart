@@ -31,25 +31,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           body: new MyHomePage(),
-          appBar: AppBar(
-            leading: Builder(
-              builder: (BuildContext context) {
-                return IconButton(
-                  icon: const Icon(Icons.menu),
-                  onPressed: () { Scaffold.of(context).openDrawer(); },
-                  tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
-                );
-              },
-            ),
-            elevation: 10.0,
-            centerTitle: true,
-            backgroundColor: secondaryColor,
-            title: Text(title,
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24.0),
-            ),
-          ),
+          appBar: CustomizedAppBar(),
         ),
       ),
     );

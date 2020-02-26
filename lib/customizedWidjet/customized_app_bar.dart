@@ -3,7 +3,7 @@ import 'package:web_driver_app/themes/themes.dart';
 
 import '../constants.dart';
 
-class CustomizedAppBar extends StatelessWidget {
+class CustomizedAppBar extends StatelessWidget with PreferredSizeWidget{
 
   @override
   Widget build(BuildContext context) {
@@ -27,4 +27,7 @@ class CustomizedAppBar extends StatelessWidget {
       ),
     );
   }
+
+  @override
+  Size get preferredSize => Size.fromHeight(appBarHeight.toDouble());
 }
