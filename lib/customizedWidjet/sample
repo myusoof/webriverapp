@@ -4,4 +4,31 @@
                   textColor: Colors.black,
                   onPressed: (){
                   },
-                )
+
+
+          )
+
+
+
+
+DrawerHeader(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Center(child: Text('Welcome', style: txtStyle_drawer_header,)),
+          ],
+        ),
+        decoration: BoxDecoration(
+          color: Colors.amber,
+        ),
+      )
+
+
+
+UserAccountsDrawerHeader(
+        currentAccountPicture: CircleAvatar(backgroundColor: Colors.red, maxRadius: 1,),
+        decoration: BoxDecoration(
+          color: Colors.amber,
+        ),
+        accountName: Center(child: Text("Welcome")),
+      )
