@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
-import 'customizedWidjet/customized_app_bar.dart';
-import 'customizedWidjet/customized_drawer.dart';
+import 'customized_app_bar.dart';
+import 'customized_drawer.dart';
 
-const title = "Webdriver";
 
-const appBarHeight = 40;
+class ScaffoldExt extends StatelessWidget {
+  final Widget body;
 
-SafeArea buildSafeArea(Widget container) {
-  return SafeArea(
-    child: Scaffold(
+  ScaffoldExt({this.body});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       drawer: Padding(
         padding: const EdgeInsets.all(0),
         child: SizedBox(
@@ -21,8 +23,8 @@ SafeArea buildSafeArea(Widget container) {
           ),
         ),
       ),
-      body: container ,
+      body: body ,
       appBar: CustomizedAppBar(),
-    ),
-  );
+    );
+  }
 }

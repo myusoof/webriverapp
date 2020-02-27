@@ -17,7 +17,6 @@ class CustomizedAppBar extends StatelessWidget with PreferredSizeWidget{
           );
         },
       ),
-      elevation: 10.0,
       centerTitle: true,
       backgroundColor: secondaryColor,
       title: Text(title,
